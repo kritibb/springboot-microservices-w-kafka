@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/kafka-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-email-notification-microservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-products-microservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mockservice/src/main/java" charset="UTF-8" />
   </component>
 </project>
