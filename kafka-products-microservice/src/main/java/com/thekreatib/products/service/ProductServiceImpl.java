@@ -33,7 +33,8 @@ public class ProductServiceImpl implements ProductService {
         LOG.info("Before publishing a ProductCreateEvent");
 
         ProducerRecord<String, ProductCreatedEvent> record = new ProducerRecord<>("product-created-events-topic", productId, productCreatedEvent);
-        record.headers().add("messageId", UUID.randomUUID().toString().getBytes());
+//        record.headers().add("messageId", UUID.randomUUID().toString().getBytes());
+        record.headers().add("messageId", "123".getBytes());
 
         SendResult<String, ProductCreatedEvent> result = kafkaTemplate.send(record).get();
         LOG.info("Partition: " + result.getRecordMetadata().partition());
