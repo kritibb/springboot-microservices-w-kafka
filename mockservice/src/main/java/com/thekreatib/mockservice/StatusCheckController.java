@@ -13,6 +13,11 @@ public class StatusCheckController {
         return ResponseEntity.ok().body("200");
     }
 
+    @GetMapping("/400")
+    ResponseEntity<String> response400String(){
+        return ResponseEntity.badRequest().build();
+    }
+
     @GetMapping("/500")
     ResponseEntity<String> response500String(){
         return ResponseEntity.internalServerError().build();
